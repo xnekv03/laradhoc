@@ -90,6 +90,14 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGO_DSN'),
+            'database' => env('MONGO_DB_DATABASE'),
+            'options' => [
+                'database' => 'admin',
+            ]
+        ],
 
     ],
 
